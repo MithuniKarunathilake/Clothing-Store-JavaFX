@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="798.0" prefWidth="729.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#82ccdd" height="239.0" layoutX="-1.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="730.0" />
+      <Circle fill="WHITE" layoutX="141.0" layoutY="131.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <ImageView fitHeight="123.0" fitWidth="161.0" layoutX="61.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="71.0" layoutX="337.0" layoutY="156.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="316.0" />
+      <Text fill="#82ccdd" layoutX="336.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLACE ORDER FORM" textAlignment="CENTER" wrappingWidth="316.0">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tblOrders" layoutX="37.0" layoutY="440.0" prefHeight="301.0" prefWidth="678.0">
+         <columns>
+            <TableColumn fx:id="colItemCode" prefWidth="119.5" text="Item Code" />
+            <TableColumn fx:id="colDescription" prefWidth="170.0" text="Description" />
+            <TableColumn fx:id="colQty" prefWidth="123.5" text="QTY" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="125.5" text="Unit Price" />
+            <TableColumn fx:id="colTotal" prefWidth="138.5" text="Total" />
+         </columns>
+      </TableView>
+      <Label layoutX="287.0" layoutY="96.0" text="Order ID :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="404.0" layoutY="28.0" text="2024-09-11" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="552.0" layoutY="96.0" text="Time :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="625.0" layoutY="96.0" text="09:34:55" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbCustomerId" layoutX="55.0" layoutY="260.0" prefHeight="25.0" prefWidth="127.0" promptText="Customer ID" />
+      <JFXComboBox fx:id="cmbItemCode" layoutX="241.0" layoutY="260.0" prefHeight="25.0" prefWidth="127.0" promptText="Item Code" />
+      <JFXTextField fx:id="txtCustomerName" layoutX="51.0" layoutY="313.0" promptText="Customer Name" />
+      <JFXTextField fx:id="txtAddress" layoutX="51.0" layoutY="370.0" promptText="Address" />
+      <JFXTextField fx:id="txtDescription" layoutX="241.0" layoutY="313.0" promptText="Description" />
+      <JFXTextField fx:id="txtStock" layoutX="241.0" layoutY="370.0" promptText="Stock" />
+      <JFXTextField fx:id="txtUnitPrice" layoutX="396.0" layoutY="313.0" promptText="Unit Price" />
+      <JFXButton layoutX="552.0" layoutY="274.0" onAction="#btnAddToCartOnAction" prefHeight="49.0" prefWidth="83.0" style="-fx-background-color: #82ccdd;" text="  " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="594.0" layoutY="751.0" onAction="#btnPlaceOrderOnAction" style="-fx-background-color: #6cd#82ccdd454;" text="Place Order" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtQty" layoutX="397.0" layoutY="370.0" prefHeight="25.0" prefWidth="135.0" promptText="QTY" />
+      <Label layoutX="59.0" layoutY="753.0" text="Net Total :" textFill="#82ccdd">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="35.0" fitWidth="36.0" layoutX="577.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../JavaFX-thogakde-item/src/main/resources/view/img/cart.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="646.0" layoutY="274.0" onAction="#btnDeleteOnAction" prefHeight="49.0" prefWidth="83.0" style="-fx-background-color: #82ccdd;" text="  " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="40.0" fitWidth="35.0" layoutX="670.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../JavaFX-thogakde-item/src/main/resources/view/img/delete.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="552.0" layoutY="346.0" onAction="#btnEditOnAction" prefHeight="49.0" prefWidth="83.0" style="-fx-background-color: #82ccdd;" text="  " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="40.0" fitWidth="35.0" layoutX="577.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../JavaFX-thogakde-item/src/main/resources/view/img/edit.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="646.0" layoutY="346.0" onAction="#btnSearchOnAction" prefHeight="49.0" prefWidth="83.0" style="-fx-background-color: #82ccdd;" text="  " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="675.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../JavaFX-thogakde-item/src/main/resources/view/img/search.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtOrderId" focusColor="WHITE" layoutX="401.0" layoutY="88.0" prefHeight="51.0" prefWidth="127.0" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXTextField>
+      <Label fx:id="lblNetTotal" layoutX="181.0" layoutY="753.0" text="0000.0" textFill="#82ccdd">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
