@@ -11,43 +11,49 @@
 
 <AnchorPane prefHeight="422.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardFormController">
    <children>
-      <Polygon fill="#82ccdd" layoutX="446.0" layoutY="135.0" points="-123.0, 287.0, 58.0, 287.0, -1.0, -135.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#82ccdd" height="422.0" layoutX="445.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="233.0" />
-      <Polygon fill="#82ccdd" layoutX="91.0" layoutY="160.0" points="-91.0, 262.0, 35.0, 262.0, -91.0, 145.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
-      <ImageView fitHeight="337.0" fitWidth="378.0" layoutX="286.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+      <Polygon fill="#85755a" layoutX="233.0" layoutY="134.0" points="189.0, -135.0, 189.0, -34.0, 321.5, -135.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <ImageView fitHeight="478.0" fitWidth="423.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../images/dashboard_img.png" />
+            <Image url="@../images/clothing%20store.jpg" />
          </image>
       </ImageView>
-      <Text fill="#4a7a85" layoutX="7.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clothify Store(PVT) Ltd." textAlignment="CENTER">
+      <Polygon fill="#b7a589" layoutX="375.0" layoutY="223.0" points="350.0, 50.0, 160.0, 199.0, 350.0, 199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Polygon fill="#85755a" layoutX="375.0" layoutY="223.0" points="350.0, 77.5, 195.0, 199.0, 350.0, 199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#85755a" height="62.0" layoutX="4.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="410.0" />
+      <Text fill="WHITE" layoutX="4.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clothify Store(PVT) Ltd." textAlignment="CENTER">
          <font>
-            <Font name="Curlz MT" size="47.0" />
+            <Font name="Curlz MT" size="46.0" />
          </font>
       </Text>
-      <JFXButton layoutX="112.0" layoutY="190.0" prefHeight="43.0" prefWidth="110.0" style="-fx-background-color: #82ccdd;" text="Admin" textFill="WHITE">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </JFXButton>
-      <JFXButton layoutX="110.0" layoutY="263.0" style="-fx-background-color: #82ccdd;" text="Employee" textFill="WHITE">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </JFXButton>
-      <Text fill="WHITE" layoutX="420.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Us : +94 123 456 789">
+      <JFXButton layoutX="489.0" layoutY="45.0" onAction="#btnOrdersOnAction" prefHeight="31.0" prefWidth="164.0" style="-fx-background-color: #b7a589;" text="Orders" textFill="WHITE">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
-      </Text>
-      <Text fill="WHITE" layoutX="420.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="clothify@sample.com">
+      </JFXButton>
+      <JFXButton layoutX="489.0" layoutY="94.0" onAction="#btnItemOnAction" prefHeight="31.0" prefWidth="164.0" style="-fx-background-color: #b7a589;" text="Item" textFill="WHITE">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
-      </Text>
-      <Text fill="#4a7a85" layoutX="193.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Panadura">
+      </JFXButton>
+      <JFXButton layoutX="489.0" layoutY="142.0" onAction="#btnEmployeeOnAction" prefHeight="31.0" prefWidth="164.0" style="-fx-background-color: #b7a589;" text="Employee" textFill="WHITE">
          <font>
-            <Font name="Curlz MT" size="24.0" />
+            <Font name="System Bold" size="18.0" />
          </font>
-      </Text>
+      </JFXButton>
+      <JFXButton layoutX="489.0" layoutY="190.0" onAction="#btnSupplierOnAction" prefHeight="31.0" prefWidth="164.0" style="-fx-background-color: #b7a589;" text="Supplier" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="488.0" layoutY="238.0" onAction="#btnOrderDetailsOnAction" prefHeight="31.0" prefWidth="164.0" style="-fx-background-color: #b7a589;" text="Order Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="488.0" layoutY="286.0" onAction="#btnReportsOnAction" prefHeight="31.0" prefWidth="164.0" style="-fx-background-color: #b7a589;" text="Reports" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
    </children>
 </AnchorPane>

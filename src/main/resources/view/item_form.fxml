@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="704.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.item.ItemFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b7a589" height="71.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="700.0" />
+      <Text fill="WHITE" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ITEM FORM" textAlignment="CENTER" wrappingWidth="700.0">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtItemCode" layoutX="40.0" layoutY="101.0" prefHeight="25.0" prefWidth="171.0" promptText="Item Code">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDescription" layoutX="255.0" layoutY="101.0" prefHeight="25.0" prefWidth="171.0" promptText="Description">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPackSize" layoutX="490.0" layoutY="101.0" prefHeight="25.0" prefWidth="171.0" promptText="Pack Size">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtUnitPrize" layoutX="126.0" layoutY="166.0" prefHeight="25.0" prefWidth="171.0" promptText="Unit Prize">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtQty" layoutX="373.0" layoutY="166.0" prefHeight="25.0" prefWidth="171.0" promptText="Quantity On Hand">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <Polygon fill="#b7a589" layoutX="350.0" layoutY="505.0" points="350.0, 50.0, 160.0, 199.0, 350.0, 199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Polygon fill="#85755a" layoutX="350.0" layoutY="505.0" points="350.0, 77.5, 195.0, 199.0, 350.0, 199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <TableView fx:id="tblItems" layoutX="34.0" layoutY="272.0" prefHeight="410.0" prefWidth="633.0">
+        <columns>
+          <TableColumn fx:id="colItemCode" prefWidth="81.0" text="Item Code" />
+          <TableColumn fx:id="colDescription" prefWidth="179.0" text="Description" />
+            <TableColumn fx:id="colPackSize" prefWidth="103.0" text="Pack Size" />
+            <TableColumn fx:id="colUnitPrize" prefWidth="150.5" text="Unit Prize" />
+            <TableColumn fx:id="colQty" prefWidth="118.5" text="Qty" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="92.0" layoutY="222.0" onAction="#btnAddOnAction" prefHeight="39.0" prefWidth="95.0" style="-fx-background-color: #b7a589;" text="Add" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="211.0" layoutY="222.0" onAction="#btnUpdateOnAction" prefHeight="39.0" prefWidth="95.0" style="-fx-background-color: #b7a589;" text="Update" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="326.0" layoutY="222.0" onAction="#btnSearchOnAction" prefHeight="39.0" prefWidth="95.0" style="-fx-background-color: #b7a589;" text="Search" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="443.0" layoutY="222.0" onAction="#btnDeleteOnAction" prefHeight="39.0" prefWidth="95.0" style="-fx-background-color: #b7a589;" text="Delete" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Polygon fill="#85755a" layoutX="-191.0" layoutY="134.0" points="189.0, -135.0, 189.0, 9.5, 379.0, -135.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+   </children>
+</AnchorPane>

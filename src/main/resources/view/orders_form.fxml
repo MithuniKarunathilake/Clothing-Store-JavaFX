@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="656.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.orders.OrdersFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b7a589" height="71.0" layoutY="10.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="710.0" />
+      <Polygon fill="#b7a589" layoutX="360.0" layoutY="457.0" points="350.0, 50.0, 160.0, 199.0, 350.0, 199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Polygon fill="#85755a" layoutX="360.0" layoutY="457.0" points="350.0, 77.5, 195.0, 199.0, 350.0, 199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Text fill="WHITE" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ORDERS FORM" textAlignment="CENTER" wrappingWidth="710.0">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtOrderId" layoutX="50.0" layoutY="111.0" prefHeight="25.0" prefWidth="171.0" promptText="Order ID">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtOrderDate" layoutX="265.0" layoutY="111.0" prefHeight="25.0" prefWidth="171.0" promptText="Order Date">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCustomerId" layoutX="500.0" layoutY="111.0" prefHeight="25.0" prefWidth="171.0" promptText="Customer ID">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <TableView fx:id="tblOrders" layoutX="61.0" layoutY="250.0" prefHeight="365.0" prefWidth="589.0">
+         <columns>
+            <TableColumn fx:id="colOrderId" prefWidth="192.5" text="Order ID" />
+            <TableColumn fx:id="colOrderDate" prefWidth="194.0" text="Order Date" />
+            <TableColumn fx:id="colCustomerId" prefWidth="201.5" text="Customer ID" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="102.0" layoutY="185.0" onAction="#btnAddOnAction" prefHeight="39.0" prefWidth="95.0" style="-fx-background-color: #b7a589;" text="Add" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="230.0" layoutY="185.0" onAction="#btnUpdateOnAction" prefHeight="39.0" prefWidth="95.0" style="-fx-background-color: #b7a589;" text="Update" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="364.0" layoutY="185.0" onAction="#btnSearchOnAction" prefHeight="39.0" prefWidth="95.0" style="-fx-background-color: #b7a589;" text="Search" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="500.0" layoutY="185.0" onAction="#btnDeleteOnAction" prefHeight="39.0" prefWidth="95.0" style="-fx-background-color: #b7a589;" text="Delete" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Polygon fill="#85755a" layoutX="-189.0" layoutY="135.0" points="189.0, -135.0, 189.0, 9.5, 379.0, -135.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+   </children>
+</AnchorPane>
