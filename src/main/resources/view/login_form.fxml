@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="415.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <Polygon fill="#85755a" layoutX="234.0" layoutY="135.0" points="189.0, -135.0, 189.0, -34.0, 321.5, -135.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <ImageView fitHeight="478.0" fitWidth="423.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/clothing%20store.jpg" />
+         </image>
+      </ImageView>
+      <Polygon fill="#b7a589" layoutX="376.0" layoutY="224.0" points="350.0, 50.0, 160.0, 199.0, 350.0, 199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Polygon fill="#85755a" layoutX="376.0" layoutY="224.0" points="350.0, 77.5, 195.0, 199.0, 350.0, 199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#85755a" height="62.0" layoutX="5.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="410.0" />
+      <Text fill="WHITE" layoutX="5.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clothify Store(PVT) Ltd." textAlignment="CENTER">
+         <font>
+            <Font name="Curlz MT" size="46.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="556.0" layoutY="274.0" onAction="#btnLoginOnAction" style="-fx-background-color: #b7a589;" text="Login" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtUsername" alignment="CENTER" layoutX="500.0" layoutY="148.0" promptText="username">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtPassword" alignment="CENTER" layoutX="500.0" layoutY="209.0" promptText="password">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXPasswordField>
+   </children>
+</AnchorPane>
