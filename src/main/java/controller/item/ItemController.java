@@ -25,7 +25,7 @@ public class ItemController implements ItemService {
         String SQL = "INSERT INTO item VALUES(?,?,?,?,?)";
         try {
            CrudUtil.execute(SQL,
-                  // item.getItemCode(),
+                   item.getItemCode(),
                    item.getDescription() ,
                    item.getPackSize(),
                    item.getUnitPrice(),
