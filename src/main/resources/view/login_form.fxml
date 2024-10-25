@@ -11,17 +11,16 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="415.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
    <children>
       <Polygon fill="#85755a" layoutX="234.0" layoutY="135.0" points="189.0, -135.0, 189.0, -34.0, 321.5, -135.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
-      <ImageView fitHeight="478.0" fitWidth="423.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="447.0" fitWidth="437.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../images/clothing%20store.jpg" />
+            <Image url="@../images/clothing store.jpg" />
          </image>
       </ImageView>
-      <Polygon fill="#b7a589" layoutX="376.0" layoutY="224.0" points="350.0, 50.0, 160.0, 199.0, 350.0, 199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
-      <Polygon fill="#85755a" layoutX="376.0" layoutY="224.0" points="350.0, 77.5, 195.0, 199.0, 350.0, 199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Polygon fill="#b7a589" layoutX="376.0" layoutY="238.0" points="350.0, 50.0, 160.0, 199.0, 350.0, 199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Polygon fill="#85755a" layoutX="376.0" layoutY="238.0" points="350.0, 77.5, 195.0, 199.0, 350.0, 199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#85755a" height="62.0" layoutX="5.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="410.0" />
       <Text fill="WHITE" layoutX="5.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clothify Store(PVT) Ltd." textAlignment="CENTER">
          <font>
@@ -43,5 +42,8 @@
             <Font size="15.0" />
          </font>
       </JFXPasswordField>
+      <JFXButton layoutX="529.0" layoutY="313.0" onAction="#handleForgotPassword" text="Forgot Password?" />
+      <JFXTextField fx:id="otpField" layoutX="512.0" layoutY="350.0" prefHeight="25.0" prefWidth="169.0" promptText="Enter OTP" visible="false" />
+      <JFXButton layoutX="549.0" layoutY="400.0" onAction="#handleVerifyOTP" prefHeight="25.0" prefWidth="57.0" text="Verify OTP" visible="false" />
    </children>
 </AnchorPane>
